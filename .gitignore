@@ -1,0 +1,201 @@
+# ===============================================
+# ISU IPCR System - Git Ignore File
+# ===============================================
+# This prevents sensitive data from being committed to GitHub
+
+# ===============================================
+# Sensitive Configuration Files
+# ===============================================
+config/database.php
+config/email.php
+
+# Keep example files for reference
+!config/database.example.php
+!config/email.config.example.php
+
+# ===============================================
+# Environment Files
+# ===============================================
+.env
+.env.local
+.env.production
+
+# ===============================================
+# Uploaded Files & Evidence
+# ===============================================
+uploads/
+evidence/
+exports/
+temp/
+tmp/
+
+# Keep directory structure
+!uploads/.gitkeep
+!evidence/.gitkeep
+!exports/.gitkeep
+
+# ===============================================
+# Logs & Debugging
+# ===============================================
+*.log
+logs/
+error_log
+php_errors.log
+debug.log
+
+# ===============================================
+# IDE & Editor Files
+# ===============================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# PHPStorm / IntelliJ
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Eclipse
+.project
+.buildpath
+.settings/
+
+# NetBeans
+nbproject/
+
+# Atom
+.atom/
+
+# ===============================================
+# Operating System Files
+# ===============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ===============================================
+# PHP / Composer
+# ===============================================
+vendor/
+composer.lock
+composer.phar
+
+# Keep composer.json for dependency management
+!composer.json
+
+# ===============================================
+# Node.js (if using)
+# ===============================================
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# ===============================================
+# Backup Files
+# ===============================================
+*.bak
+*.backup
+*.old
+*.orig
+*.save
+*.swp
+*.swo
+*~
+
+# Database backups
+*.sql.gz
+*.sql.zip
+backup_*.sql
+
+# Keep schema/migration files
+!database/ipcr_system.sql
+!database/migration_*.sql
+
+# ===============================================
+# Cache & Temporary Files
+# ===============================================
+cache/
+sessions/
+*.cache
+*.tmp
+
+# ===============================================
+# Security & Sensitive Data
+# ===============================================
+# API Keys (if stored in files)
+api_keys.txt
+secrets.txt
+credentials.txt
+
+# SSL Certificates & Keys
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+
+# ===============================================
+# Test & Development Files
+# ===============================================
+# Test outputs
+test-output/
+coverage/
+.phpunit.result.cache
+
+# Development only files (optional - uncomment if needed)
+# test-*.php
+# debug-*.php
+# dev-*.php
+
+# ===============================================
+# Documentation Builds (if any)
+# ===============================================
+docs/_build/
+docs/.doctrees/
+
+# ===============================================
+# Specific to this project
+# ===============================================
+# Personal test files
+test-personal-*.php
+
+# Local configuration overrides
+config.local.php
+settings.local.php
+
+# ===============================================
+# IMPORTANT NOTES
+# ===============================================
+# 1. After creating this file, run:
+#    git rm --cached config/database.php
+#    git rm --cached config/email.php
+#
+# 2. Make sure you have .example versions:
+#    config/database.example.php ✓
+#    config/email.config.example.php ✓
+#
+# 3. Never commit:
+#    - Real database credentials
+#    - Email passwords
+#    - API keys
+#    - User uploads
+#    - Personal data
+# ===============================================
